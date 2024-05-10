@@ -1,0 +1,1 @@
+infix fun <A, B> A.with(that: B): Pair<A, B> = Pair(this, that)

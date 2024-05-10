@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.playaudiotest.databinding.ActivityMainBinding
+import with
 
 class MainActivity : AppCompatActivity() {
 
@@ -47,5 +48,26 @@ class MainActivity : AppCompatActivity() {
         mediaPlayer.stop()
         mediaPlayer.release()
     }
+
+
+    fun test() {
+        if ("Hello Kotlin".startsWith("Hello")) {
+            //
+        }
+        if ("Hello World" beginsWith "Hello") {
+
+        }
+
+        val list = listOf("Apple", "Banana", "Orange")
+        if (list has "Banana") {
+
+        }
+
+        val map = mapOf("Apple" with 1, "Banana" with 2)
+    }
+
+    private infix fun String.beginsWith(prefix: String) = startsWith(prefix)
+
+    infix fun <T> Collection<T>.has(element: T) = contains(element)
 
 }
