@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initMediaPlayer() {
         val assetManager = assets
-        val fd = assetManager.openFd("music.mp3")
+        val fd = assetManager.openFd("faraway.mp3")
         mediaPlayer.setDataSource(fd.fileDescriptor, fd.startOffset, fd.length)
         mediaPlayer.prepare()
     }
